@@ -1,0 +1,49 @@
+		vector(_set,Gactorpos,8021,3320,15047);
+		vector(_set,Gactorangle,0,-11,0);
+		InitActor(scientist,Gactorpos,Gactorangle,"S3_lab08",TRUE,1);
+
+		vector(_set,Gactorpos,7489,3326,16729);
+		vector(_set,Gactorangle,0,-489,0);
+		InitActor(radiationworker,Gactorpos,Gactorangle,"S3_lab08",TRUE,2);
+
+		vector(_set,Gactorpos,9577,3301,15823);
+		vector(_set,Gactorangle,0,1024,0);
+		InitActor(scientist,Gactorpos,Gactorangle,"S3_lab04",TRUE,1);
+
+		vector(_set,Gactorpos,10016,3301,16587);
+		vector(_set,Gactorangle,0,523,0);
+		InitActor(scientist,Gactorpos,Gactorangle,"S3_lab04",TRUE,2);
+
+		vector(_set,Gactorpos,8760,3477,13686);
+		vector(_set,Gactorangle,0,2048,0);
+		InitActor(scientist,Gactorpos,Gactorangle,"S3_lab05",TRUE,1);
+
+		vector(_set,Gactorpos,8597,3470,13360);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(scientist,Gactorpos,Gactorangle,"S3_lab05",TRUE,2);
+
+		vector(_set,Gactorpos,9746,3765,13294);
+		vector(_set,Gactorangle,0,1536,0);
+		InitActor(autocannon2,Gactorpos,Gactorangle,"S3_lab05",FALSE,0);
+
+		vector(_set,Gactorpos,8378,3768,13290);
+		vector(_set,Gactorangle,0,6644,0);
+		InitActor(autocannon3,Gactorpos,Gactorangle,"S3_lab05",FALSE,0);
+
+		vector(_set,Gactorpos,6407,3321,16305);
+		vector(_set,Gactorangle,0,-1024,0);
+		InitActor(scientist,Gactorpos,Gactorangle,"S3_lab07",TRUE,1);
+
+		vector(_set,Gactorpos,6015,3322,16645);
+		vector(_set,Gactorangle,0,-352,0);
+		InitActor(scientist,Gactorpos,Gactorangle,"S3_lab07",TRUE,2);
+
+/*		vector(_set,Gactorpos,5952,3706,15482);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(autocannon4,Gactorpos,Gactorangle,"S3_lab07",FALSE,0);
+*/
+		vector(_set,Gactorpos,10559,3301,15612);
+		vector(_set,Gactorangle,0,3072,0);
+		InitActor(scientist,Gactorpos,Gactorangle,"S3_lab4a",TRUE,6);
+
+

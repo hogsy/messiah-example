@@ -1,0 +1,201 @@
+		vector(_set,Gactorpos,2478,0,3423);
+		vector(_set,Gactorangle,0,-420,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponMachineGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,2471,0,3519);
+		vector(_set,Gactorangle,0,2457,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponMachineGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,2595,0,3620);
+		vector(_set,Gactorangle,0,-409,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponMachineGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,2719,0,3559);
+		vector(_set,Gactorangle,0,3652,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponMachineGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,2865,0,3681);
+		vector(_set,Gactorangle,0,1797,0);
+		InitActor(copm,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponMachineGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,2726,0,3762);
+		vector(_set,Gactorangle,0,-420,0);
+		InitActor(coph,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponMachineGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,2960,0,3833);
+		vector(_set,Gactorangle,0,1797,0);
+		InitActor(copm,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponMachineGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,3157,0,3772);
+		vector(_set,Gactorangle,0,2275,0);
+		InitActor(copm,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponMachineGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,3281,0,3686);
+		vector(_set,Gactorangle,0,409,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponMachineGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,3303,0,3580);
+		vector(_set,Gactorangle,0,932,0);
+		InitActor(copm,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponMachineGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,3084,0,3468);
+		vector(_set,Gactorangle,0,-420,0);
+		InitActor(coph,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponMachineGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,3047,0,3569);
+		vector(_set,Gactorangle,0,-420,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponMachineGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,3055,0,3650);
+		vector(_set,Gactorangle,0,932,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponMachineGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,2442,0,3737);
+		vector(_set,Gactorangle,0,409,0);
+		InitActor(copm,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponMachineGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,2412,0,3615);
+		vector(_set,Gactorangle,0,1797,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponMachineGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,2719,0,3478);
+		vector(_set,Gactorangle,0,932,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponMachineGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,2857,0,3377);
+		vector(_set,Gactorangle,0,352,0);
+		InitActor(copm,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponMachineGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,3142,1,3316);
+		vector(_set,Gactorangle,0,-409,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponMachineGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,3324,1,3331);
+		vector(_set,Gactorangle,0,1797,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponMachineGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,3478,0,3438);
+		vector(_set,Gactorangle,0,409,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponMachineGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,3521,0,3590);
+		vector(_set,Gactorangle,0,-409,0);
+		InitActor(copm,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponMachineGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,3507,0,3696);
+		vector(_set,Gactorangle,0,3652,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,3383,0,3782);
+		vector(_set,Gactorangle,0,1797,0);
+		InitActor(coph,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,2923,0,3752);
+		vector(_set,Gactorangle,0,2275,0);
+		InitActor(coph,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,2770,0,3863);
+		vector(_set,Gactorangle,0,3652,0);
+		InitActor(coph,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,2515,0,3792);
+		vector(_set,Gactorangle,0,3652,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,2551,1,3291);
+		vector(_set,Gactorangle,0,2457,0);
+		InitActor(coph,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,2792,1,3250);
+		vector(_set,Gactorangle,0,3652,0);
+		InitActor(copm,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,3179,0,3397);
+		vector(_set,Gactorangle,0,2457,0);
+		InitActor(copm,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,3324,0,3514);
+		vector(_set,Gactorangle,0,352,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,2894,0,3554);
+		vector(_set,Gactorangle,0,409,0);
+		InitActor(coph,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,3025,1,3215);
+		vector(_set,Gactorangle,0,1797,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,3288,1,3220);
+		vector(_set,Gactorangle,0,-420,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,3500,1,3306);
+		vector(_set,Gactorangle,0,409,0);
+		InitActor(coph,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,3646,0,3504);
+		vector(_set,Gactorangle,0,932,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,3667,0,3645);
+		vector(_set,Gactorangle,0,1797,0);
+		InitActor(copm,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,2639,0,3392);
+		vector(_set,Gactorangle,0,1797,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,2310,0,3463);
+		vector(_set,Gactorangle,0,409,0);
+		InitActor(coph,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,2274,0,3554);
+		vector(_set,Gactorangle,0,932,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Dynamic");
+
+		vector(_set,Gactorpos,2296,0,3671);
+		vector(_set,Gactorangle,0,-409,0);
+		InitActor(coph,Gactorpos,Gactorangle,"Dynamic",FALSE,0);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Dynamic");
+
+

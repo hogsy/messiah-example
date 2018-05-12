@@ -1,0 +1,9 @@
+		vector(_set,Gactorpos,-11247,33165,5256);
+		vector(_set,Gactorangle,0,1843,0);
+		InitActor(beast,Gactorpos,Gactorangle,"arena01",TRUE,1);
+
+		vector(_set,Gactorpos,-12604,33365,9535);
+		vector(_set,Gactorangle,0,-204,0);
+		InitActor(priest,Gactorpos,Gactorangle,"arena01",TRUE,2);
+
+

@@ -1,0 +1,58 @@
+		vector(_set,Gactorpos,-8670,19862,12807);
+		vector(_set,Gactorangle,0,-1024,0);
+		InitActor(worker,Gactorpos,Gactorangle,"Acs11",TRUE,5);
+		InitActor(weapontorch,Gactorpos,Gactorangle,"Acs11");
+
+		vector(_set,Gactorpos,-8856,17522,10174);
+		vector(_set,Gactorangle,0,5222,0);
+		InitActor(worker2,Gactorpos,Gactorangle,"Acs02",TRUE,2);
+
+		vector(_set,Gactorpos,-8077,18314,11610);
+		vector(_set,Gactorangle,0,-318,0);
+		InitActor(bouncer,Gactorpos,Gactorangle,"Acs02",TRUE,3);
+
+		vector(_set,Gactorpos,-7954,18308,11437);
+		vector(_set,Gactorangle,0,2059,0);
+		InitActor(dweller1,Gactorpos,Gactorangle,"Acs02",TRUE,1);
+
+		vector(_set,Gactorpos,-7956,18308,11332);
+		vector(_set,Gactorangle,0,2059,0);
+		InitActor(dancer1,Gactorpos,Gactorangle,"Acs02",TRUE,2);
+
+		vector(_set,Gactorpos,-7954,18308,11208);
+		vector(_set,Gactorangle,0,2059,0);
+		InitActor(dancer1,Gactorpos,Gactorangle,"Acs02",TRUE,3);
+
+		vector(_set,Gactorpos,-7949,18308,11095);
+		vector(_set,Gactorangle,0,2059,0);
+		InitActor(dweller1,Gactorpos,Gactorangle,"Acs02",TRUE,4);
+
+		vector(_set,Gactorpos,-5771,18610,14938);
+		vector(_set,Gactorangle,0,1774,0);
+		InitActor(copm,Gactorpos,Gactorangle,"Acs04",TRUE,4);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Acs04");
+
+		vector(_set,Gactorpos,-4573,18208,15330);
+		vector(_set,Gactorangle,0,1058,0);
+		InitActor(worker2,Gactorpos,Gactorangle,"Acs04",TRUE,2);
+
+		vector(_set,Gactorpos,-9596,16508,13060);
+		vector(_set,Gactorangle,0,-125,0);
+		InitActor(dweller1,Gactorpos,Gactorangle,"Acs07",FALSE,0);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Acs07");
+
+		vector(_set,Gactorpos,-7632,19461,13954);
+		vector(_set,Gactorangle,0,2048,0);
+		InitActor(WorkerKneelWelding,Gactorpos,Gactorangle,"Acs09",TRUE,3);
+		InitActor(weapontorch,Gactorpos,Gactorangle,"Acs09");
+
+		vector(_set,Gactorpos,-4406,18210,14757);
+		vector(_set,Gactorangle,0,2059,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Acsbooth",TRUE,5);
+		InitActor(WeaponMachineGun,Gactorpos,Gactorangle,"Acsbooth");
+
+		vector(_set,Gactorpos,-4254,18210,14766);
+		vector(_set,Gactorangle,0,2059,0);
+		InitActor(WeaponBazooka,Gactorpos,Gactorangle,"Acsbooth",FALSE,5);
+
+

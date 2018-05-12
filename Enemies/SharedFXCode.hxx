@@ -1,0 +1,824 @@
+
+
+//xplane hit
+SubRoutine(Sub_plasmastripxhit)
+{
+		spawnparticle(fx_plasmawall,-1,tmpvector4,emptyvector,fx_plasmawallhitxplane,true);
+		vector(_add,tmpvector4,tmpvector);
+		spawnparticle(fx_plasmawall,-1,tmpvector4,emptyvector,fx_plasmawallhitxplane,true);
+		vector(_add,tmpvector4,tmpvector);
+		spawnparticle(fx_plasmawall,-1,tmpvector4,emptyvector,fx_plasmawallhitxplane,true);
+		vector(_add,tmpvector4,tmpvector);
+		spawnparticle(fx_plasmawall,-1,tmpvector4,emptyvector,fx_plasmawallhitxplane,true);
+		vector(_add,tmpvector4,tmpvector);
+		spawnparticle(fx_plasmawall,-1,tmpvector4,emptyvector,fx_plasmawallhitxplane,true);
+		vector(_add,tmpvector4,tmpvector);
+		spawnparticle(fx_plasmawall,-1,tmpvector4,emptyvector,fx_plasmawallhitxplane,true);
+		vector(_add,tmpvector4,tmpvector);
+		spawnparticle(fx_plasmawall,-1,tmpvector4,emptyvector,fx_plasmawallhitxplane,true);
+		vector(_add,tmpvector4,tmpvector);
+		spawnparticle(fx_plasmawall,-1,tmpvector4,emptyvector,fx_plasmawallhitxplane,true);
+}
+
+//x plane still
+SubRoutine(Sub_plasmastripxstill)
+{
+		spawnparticle(fx_plasmawall,-1,tmpvector4,emptyvector,fx_plasmawallstillxplane,true);
+		vector(_add,tmpvector4,tmpvector);
+		spawnparticle(fx_plasmawall,-1,tmpvector4,emptyvector,fx_plasmawallstillxplane,true);
+		vector(_add,tmpvector4,tmpvector);
+		spawnparticle(fx_plasmawall,-1,tmpvector4,emptyvector,fx_plasmawallstillxplane,true);
+		vector(_add,tmpvector4,tmpvector);
+		spawnparticle(fx_plasmawall,-1,tmpvector4,emptyvector,fx_plasmawallstillxplane,true);
+		vector(_add,tmpvector4,tmpvector);
+		spawnparticle(fx_plasmawall,-1,tmpvector4,emptyvector,fx_plasmawallstillxplane,true);
+		vector(_add,tmpvector4,tmpvector);
+		spawnparticle(fx_plasmawall,-1,tmpvector4,emptyvector,fx_plasmawallstillxplane,true);
+		vector(_add,tmpvector4,tmpvector);
+		spawnparticle(fx_plasmawall,-1,tmpvector4,emptyvector,fx_plasmawallstillxplane,true);
+		vector(_add,tmpvector4,tmpvector);
+		spawnparticle(fx_plasmawall,-1,tmpvector4,emptyvector,fx_plasmawallstillxplane,true);
+}
+
+
+//zplane hit
+SubRoutine(Sub_plasmastripzhit)
+{
+		spawnparticle(fx_plasmawall,-1,tmpvector4,emptyvector,fx_plasmawallhitzplane,true);
+		vector(_add,tmpvector4,tmpvector);
+		spawnparticle(fx_plasmawall,-1,tmpvector4,emptyvector,fx_plasmawallhitzplane,true);
+		vector(_add,tmpvector4,tmpvector);
+		spawnparticle(fx_plasmawall,-1,tmpvector4,emptyvector,fx_plasmawallhitzplane,true);
+		vector(_add,tmpvector4,tmpvector);
+		spawnparticle(fx_plasmawall,-1,tmpvector4,emptyvector,fx_plasmawallhitzplane,true);
+		vector(_add,tmpvector4,tmpvector);
+		spawnparticle(fx_plasmawall,-1,tmpvector4,emptyvector,fx_plasmawallhitzplane,true);
+		vector(_add,tmpvector4,tmpvector);
+		spawnparticle(fx_plasmawall,-1,tmpvector4,emptyvector,fx_plasmawallhitzplane,true);
+		vector(_add,tmpvector4,tmpvector);
+		spawnparticle(fx_plasmawall,-1,tmpvector4,emptyvector,fx_plasmawallhitzplane,true);
+		vector(_add,tmpvector4,tmpvector);
+		spawnparticle(fx_plasmawall,-1,tmpvector4,emptyvector,fx_plasmawallhitzplane,true);
+}
+
+//z plane still
+SubRoutine(Sub_plasmastripzstill)
+{
+		spawnparticle(fx_plasmawall,-1,tmpvector4,emptyvector,fx_plasmawallstillzplane,true);
+		vector(_add,tmpvector4,tmpvector);
+		spawnparticle(fx_plasmawall,-1,tmpvector4,emptyvector,fx_plasmawallstillzplane,true);
+		vector(_add,tmpvector4,tmpvector);
+		spawnparticle(fx_plasmawall,-1,tmpvector4,emptyvector,fx_plasmawallstillzplane,true);
+		vector(_add,tmpvector4,tmpvector);
+		spawnparticle(fx_plasmawall,-1,tmpvector4,emptyvector,fx_plasmawallstillzplane,true);
+		vector(_add,tmpvector4,tmpvector);
+		spawnparticle(fx_plasmawall,-1,tmpvector4,emptyvector,fx_plasmawallstillzplane,true);
+		vector(_add,tmpvector4,tmpvector);
+		spawnparticle(fx_plasmawall,-1,tmpvector4,emptyvector,fx_plasmawallstillzplane,true);
+		vector(_add,tmpvector4,tmpvector);
+		spawnparticle(fx_plasmawall,-1,tmpvector4,emptyvector,fx_plasmawallstillzplane,true);
+		vector(_add,tmpvector4,tmpvector);
+		spawnparticle(fx_plasmawall,-1,tmpvector4,emptyvector,fx_plasmawallstillzplane,true);
+}
+
+
+SubRoutine(Sub_plasmawall,vector(plaspos),const(pwalldir),const(pwallstate),float(plasxzscale),float(plasyscale))
+{
+		vector(_copy,gactorine,plaspos);
+
+		vector(_set,tmpvector2,0,0,0);
+
+		//scale ratio: 1==51.2
+		vector(_set,tmpvector,0,0,0);
+		vector(_sety,tmpvector,plasyscale);
+		if(pwalldir==1)
+		{
+			vector(_setz,tmpvector2,plasxzscale);
+		}								 
+		else
+		{
+			vector(_setx,tmpvector2,plasxzscale);
+		}
+
+		//outter edges
+		vector(_copy,tmpvector4,gactorine);
+
+		if(pwalldir==1)
+		{
+			if(pwallstate==0)
+			{
+				callsub(Sub_plasmastripzstill);
+			}
+			else
+			{
+				callsub(Sub_plasmastripzhit);
+			}
+		}
+		else
+		{
+			if(pwallstate==0)
+			{
+				callsub(Sub_plasmastripxstill);
+			}
+			else
+			{
+				callsub(Sub_plasmastripxhit);
+			}
+		}
+
+		vector(_copy,tmpvector1,tmpvector2);
+		if(pwalldir==1)
+		{
+			vector(_set,tmpvector3,0,0,5);
+		}
+		else
+		{
+			vector(_set,tmpvector3,5,0,0);
+		}
+		vector(_mul,tmpvector1,tmpvector3);
+		vector(_copy,tmpvector4,gactorine);
+		vector(_add,tmpvector4,tmpvector1);
+		if(pwalldir==1)
+		{
+			if(pwallstate==0)
+			{
+				callsub(Sub_plasmastripzstill);
+			}
+			else
+			{
+				callsub(Sub_plasmastripzhit);
+			}
+		}
+		else
+		{
+			if(pwallstate==0)
+			{
+				callsub(Sub_plasmastripxstill);
+			}
+			else
+			{
+				callsub(Sub_plasmastripxhit);
+			}
+		}
+
+		//inner edges
+		vector(_copy,tmpvector1,tmpvector2);
+		if(pwalldir==1)
+		{
+			vector(_set,tmpvector3,0,0,1);
+		}
+		else
+		{
+			vector(_set,tmpvector3,1,0,0);
+		}
+		vector(_mul,tmpvector1,tmpvector3);
+		vector(_copy,tmpvector4,gactorine);
+		vector(_add,tmpvector4,tmpvector1);
+		if(pwalldir==1)
+		{
+			if(pwallstate==0)
+			{
+				callsub(Sub_plasmastripzstill);
+			}
+			else
+			{
+				callsub(Sub_plasmastripzhit);
+			}
+		}
+		else
+		{
+			if(pwallstate==0)
+			{
+				callsub(Sub_plasmastripxstill);
+			}
+			else
+			{
+				callsub(Sub_plasmastripxhit);
+			}
+		}
+
+		vector(_copy,tmpvector1,tmpvector2);
+		if(pwalldir==1)
+		{
+			vector(_set,tmpvector3,0,0,4);
+		}
+		else
+		{
+			vector(_set,tmpvector3,4,0,0);
+		}
+		vector(_mul,tmpvector1,tmpvector3);
+		vector(_copy,tmpvector4,gactorine);
+		vector(_add,tmpvector4,tmpvector1);
+		if(pwalldir==1)
+		{
+			if(pwallstate==0)
+			{
+				callsub(Sub_plasmastripzstill);
+			}
+			else
+			{
+				callsub(Sub_plasmastripzhit);
+			}
+		}
+		else
+		{
+			if(pwallstate==0)
+			{
+				callsub(Sub_plasmastripxstill);
+			}
+			else
+			{
+				callsub(Sub_plasmastripxhit);
+			}
+		}
+
+		//centre edges
+		vector(_copy,tmpvector1,tmpvector2);
+		if(pwalldir==1)
+		{
+			vector(_set,tmpvector3,0,0,2);
+		}
+		else
+		{
+			vector(_set,tmpvector3,2,0,0);
+		}
+		vector(_mul,tmpvector1,tmpvector3);
+		vector(_copy,tmpvector4,gactorine);
+		vector(_add,tmpvector4,tmpvector1);
+		if(pwalldir==1)
+		{
+			if(pwallstate==0)
+			{
+				callsub(Sub_plasmastripzstill);
+			}
+			else
+			{
+				callsub(Sub_plasmastripzhit);
+			}
+		}
+		else
+		{
+			if(pwallstate==0)
+			{
+				callsub(Sub_plasmastripxstill);
+			}
+			else
+			{
+				callsub(Sub_plasmastripxhit);
+			}
+		}
+
+		vector(_copy,tmpvector1,tmpvector2);
+		if(pwalldir==1)
+		{
+			vector(_set,tmpvector3,0,0,3);
+		}
+		else
+		{
+			vector(_set,tmpvector3,3,0,0);
+		}
+		vector(_mul,tmpvector1,tmpvector3);
+		vector(_copy,tmpvector4,gactorine);
+		vector(_add,tmpvector4,tmpvector1);
+		if(pwalldir==1)
+		{
+			if(pwallstate==0)
+			{
+				callsub(Sub_plasmastripzstill);
+			}
+			else
+			{
+				callsub(Sub_plasmastripzhit);
+			}
+		}
+		else
+		{
+			if(pwallstate==0)
+			{
+				callsub(Sub_plasmastripxstill);
+			}
+			else
+			{
+				callsub(Sub_plasmastripxhit);
+			}
+		}
+}
+
+
+SubRoutine(Sub_riotshield,const(fx1),const(fx2),const(fx3),const(fx4),const(fx5),const(fx6),float(shstate))
+{
+	/*
+		if(EveryOtherFrame==0)
+		{
+			vector(_set,tmpvector,52,187,255);
+			SpawnLight(Lomnilight2,0,EmptyVector,tmpvector,EmptyVector,600);
+		}
+	*/
+
+		vector(_set,fxvector,-16,0,-60);		//offset for quads
+		vector(_set,tmpvector1,0,-40,0);		//inital y offset for layer
+
+////////////
+////////////
+//////////// THE PLASMA (48 PARTICLES)
+////////////
+////////////
+		vector(_set,tmpvector1,0,16,0);			//y offsets for plasma
+		vector(_set,tmpvector2,0,-96,0);		//initial y offset for plasma
+
+		//outer edges
+		vector(_set,gactorpos,20,0,0);
+		vector(_add,gactorpos,fxvector);
+		vector(_add,gactorpos,tmpvector2);
+		float(_cos,tmpfloat1,567);
+		float(_sin,tmpfloat2,567);
+		float(_mul,tmpfloat1,20);
+		float(_mul,tmpfloat2,20);
+		vector(_addx,gactorpos,tmpfloat1);
+		vector(_addz,gactorpos,tmpfloat2);
+		if(shstate<=2)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx6);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=4)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx6);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=6)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx6);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=8)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx6);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=8)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx6);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=6)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx6);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=4)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx6);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=2)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx6);
+		}
+
+		vector(_set,gactorpos,-20,0,0);
+		vector(_add,gactorpos,tmpvector2);
+		vector(_add,gactorpos,fxvector);
+		vector(_subx,gactorpos,tmpfloat1);
+		vector(_addz,gactorpos,tmpfloat2);
+		if(shstate<=2)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx1);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=4)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx1);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=6)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx1);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=8)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx1);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=8)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx1);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=6)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx1);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=4)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx1);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=2)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx1);
+		}
+
+		//inner edges
+		vector(_set,gactorpos,12,0,0);
+		vector(_add,gactorpos,fxvector);
+		vector(_add,gactorpos,tmpvector2);
+		float(_cos,tmpfloat1,405);
+		float(_sin,tmpfloat2,405);
+		float(_mul,tmpfloat1,12);
+		float(_mul,tmpfloat2,12);
+		vector(_addx,gactorpos,tmpfloat1);
+		vector(_addz,gactorpos,tmpfloat2);
+		if(shstate<=2)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx5);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=4)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx5);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=6)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx5);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=10)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx5);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=10)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx5);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=6)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx5);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=4)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx5);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=2)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx5);
+		}
+
+		vector(_set,gactorpos,-12,0,0);
+		vector(_add,gactorpos,tmpvector2);
+		vector(_add,gactorpos,fxvector);
+		vector(_subx,gactorpos,tmpfloat1);
+		vector(_addz,gactorpos,tmpfloat2);
+		if(shstate<=2)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx2);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=4)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx2);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=6)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx2);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=10)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx2);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=10)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx2);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=6)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx2);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=4)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx2);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=2)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx2);
+		}
+
+		//centre
+		vector(_set,gactorpos,4,0,0);
+		vector(_add,gactorpos,fxvector);
+		vector(_add,gactorpos,tmpvector2);
+		float(_cos,tmpfloat1,243);
+		float(_sin,tmpfloat2,243);
+		float(_mul,tmpfloat1,4);
+		float(_mul,tmpfloat2,4);
+		vector(_addx,gactorpos,tmpfloat1);
+		vector(_addz,gactorpos,tmpfloat2);
+
+		if(shstate<=2)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx4);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=4)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx4);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=6)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx4);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=12)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx4);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=12)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx4);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=6)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx4);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=4)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx4);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=2)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx4);
+		}
+
+		vector(_set,gactorpos,-4,0,0);
+		vector(_add,gactorpos,tmpvector2);
+		vector(_add,gactorpos,fxvector);
+		vector(_subx,gactorpos,tmpfloat1);
+		vector(_addz,gactorpos,tmpfloat2);
+		if(shstate<=2)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx3);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=4)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx3);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=6)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx3);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=12)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx3);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=12)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx3);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=6)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx3);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=4)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx3);
+		}
+		vector(_add,gactorpos,tmpvector1);
+		if(shstate<=2)
+		{
+			spawnparticle(fx_riotshield256,0,gactorpos,emptyvector,fx3);
+		}
+}
+
+
+
+
+
+//beast land shockwave
+subroutine(Sub_sub_shockwave)
+{
+		float(_rnd,tmpfloat,4096);
+		vector(_vectorfromangle,tmpvector,tmpfloat,16);
+		vector(_copy,tmpvector3,tmpvector);
+		vector(_normalize,tmpvector);
+		vector(_mul,tmpvector,tmpvector2);
+		vector(_add,tmpvector3,gactorpos);
+		SpawnParticle(fx_shockwave,-1,tmpvector3,tmpvector,fx_heavyland);
+}
+
+//vertical shockwave
+subroutine(Sub_sub_shockwave2)
+{
+		float(_rnd2,tmpfloat,4096);
+		float(_sin,tmpfloat1,tmpfloat);
+		float(_cos,tmpfloat2,tmpfloat);
+		float(_mul,tmpfloat1,9);
+		float(_mul,tmpfloat2,9);
+		vector(_set,tmpvector,0,0,0);
+		vector(_setx,tmpvector,tmpfloat1);
+		vector(_sety,tmpvector,tmpfloat2);
+		SpawnParticle(fx_shockwaver,-1,gactorpos,tmpvector,-1);
+}
+
+//horizontal shockwave
+subroutine(Sub_sub_shockwave3)
+{
+		float(_rnd2,tmpfloat,4096);
+		float(_sin,tmpfloat1,tmpfloat);
+		float(_cos,tmpfloat2,tmpfloat);
+		float(_mul,tmpfloat1,9);
+		float(_mul,tmpfloat2,9);
+		vector(_set,tmpvector,0,0,0);
+		vector(_setx,tmpvector,tmpfloat1);
+		vector(_setz,tmpvector,tmpfloat2);
+		SpawnParticle(fx_shockwaver,-1,gactorpos,tmpvector,-1);
+}
+
+
+//not off the bone, becoz we get angles from the matrix we don't care for!
+//fxvector must be filled in prior to calling
+subroutine(Sub_Shockwave,const(ShockWaveActor),const(plane))
+{
+		if(ShockWaveActor!=0)
+		{
+			spawnactorbone(ShockWaveActor,EmptyVector,TmpVector,TmpVector4,22);
+
+			//SHOCKWAVE (16 PARTICLE)
+			vector(_settoactorpos,gactorpos);
+			vector(_add,gactorpos,fxvector);
+			vector(_set,tmpvector2,9,9,9);
+
+			callsub(Sub_sub_shockwave);
+			callsub(Sub_sub_shockwave);
+			callsub(Sub_sub_shockwave);
+			callsub(Sub_sub_shockwave);
+			callsub(Sub_sub_shockwave);
+			callsub(Sub_sub_shockwave);
+			callsub(Sub_sub_shockwave);
+			callsub(Sub_sub_shockwave);
+			callsub(Sub_sub_shockwave);
+			callsub(Sub_sub_shockwave);
+			callsub(Sub_sub_shockwave);
+			callsub(Sub_sub_shockwave);
+			callsub(Sub_sub_shockwave);
+			callsub(Sub_sub_shockwave);
+			callsub(Sub_sub_shockwave);
+			callsub(Sub_sub_shockwave);
+		}
+		else
+		{
+			vector(_settoactorpos,gactorpos);
+			vector(_add,gactorpos,fxvector);
+
+			if(plane==0)
+			{
+				//vertical
+				callsub(Sub_sub_shockwave2);
+				callsub(Sub_sub_shockwave2);
+				callsub(Sub_sub_shockwave2);
+				callsub(Sub_sub_shockwave2);
+				callsub(Sub_sub_shockwave2);
+				callsub(Sub_sub_shockwave2);
+				callsub(Sub_sub_shockwave2);
+				callsub(Sub_sub_shockwave2);
+				callsub(Sub_sub_shockwave2);
+				callsub(Sub_sub_shockwave2);
+				callsub(Sub_sub_shockwave2);
+				callsub(Sub_sub_shockwave2);
+				callsub(Sub_sub_shockwave2);
+				callsub(Sub_sub_shockwave2);
+				callsub(Sub_sub_shockwave2);
+				callsub(Sub_sub_shockwave2);
+			}
+			else
+			{
+				//horiz
+				callsub(Sub_sub_shockwave3);
+				callsub(Sub_sub_shockwave3);
+				callsub(Sub_sub_shockwave3);
+				callsub(Sub_sub_shockwave3);
+				callsub(Sub_sub_shockwave3);
+				callsub(Sub_sub_shockwave3);
+				callsub(Sub_sub_shockwave3);
+				callsub(Sub_sub_shockwave3);
+				callsub(Sub_sub_shockwave3);
+				callsub(Sub_sub_shockwave3);
+				callsub(Sub_sub_shockwave3);
+				callsub(Sub_sub_shockwave3);
+				callsub(Sub_sub_shockwave3);
+				callsub(Sub_sub_shockwave3);
+				callsub(Sub_sub_shockwave3);
+				callsub(Sub_sub_shockwave3);
+			}
+		}
+}
+
+SubRoutine(LaserStrip,vector(source),vector(dest),const(color),const(direction))
+{
+		vector(_copy,tmpvector,dest);
+		vector(_sub,tmpvector,source);
+
+		if(direction==0)
+		{
+			spawnparticle(fx_laserstrip,-1,source,tmpvector,color);
+		}
+		else
+		{
+			spawnparticle(fx_Vlaserstrip,-1,source,tmpvector,color);
+		}
+}
+
+SubRoutine(ElectricStrip,vector(source),vector(dest),const(color))
+{
+		vector(_copy,tmpvector1,dest);
+
+		vector(_copy,tmpvector,dest);
+		vector(_sub,tmpvector,source);
+
+		vector(_set,fxvector,8,8,8);
+		vector(_div,tmpvector,fxvector);
+
+		vector(_copy,tmpvector2,source);
+		vector(_sub,tmpvector2,tmpvector);
+
+		vector(_add,tmpvector2,tmpvector);
+		vector(_copy,tmpvector3,tmpvector2);
+		float(_rnd2,tmpfloat,32);
+		float(_sub,tmpfloat,16);
+		vector(_sety,tmpvector,tmpfloat);
+		spawnparticle(fx_ElectricStrip,-1,tmpvector3,tmpvector,color);
+
+		vector(_add,tmpvector2,tmpvector);
+		vector(_copy,tmpvector3,tmpvector2);
+		float(_rnd2,tmpfloat,32);
+		float(_sub,tmpfloat,16);
+		vector(_sety,tmpvector,tmpfloat);
+		spawnparticle(fx_ElectricStrip,-1,tmpvector3,tmpvector,color);
+
+		vector(_add,tmpvector2,tmpvector);
+		vector(_copy,tmpvector3,tmpvector2);
+		float(_rnd2,tmpfloat,32);
+		float(_sub,tmpfloat,16);
+		vector(_sety,tmpvector,tmpfloat);
+		spawnparticle(fx_ElectricStrip,-1,tmpvector3,tmpvector,color);
+
+		vector(_add,tmpvector2,tmpvector);
+		vector(_copy,tmpvector3,tmpvector2);
+		float(_rnd2,tmpfloat,32);
+		float(_sub,tmpfloat,16);
+		vector(_sety,tmpvector,tmpfloat);
+		spawnparticle(fx_ElectricStrip,-1,tmpvector3,tmpvector,color);
+
+		vector(_add,tmpvector2,tmpvector);
+		vector(_copy,tmpvector3,tmpvector2);
+		float(_rnd2,tmpfloat,32);
+		float(_sub,tmpfloat,16);
+		vector(_sety,tmpvector,tmpfloat);
+		spawnparticle(fx_ElectricStrip,-1,tmpvector3,tmpvector,color);
+
+		vector(_add,tmpvector2,tmpvector);
+		vector(_copy,tmpvector3,tmpvector2);
+		float(_rnd2,tmpfloat,32);
+		float(_sub,tmpfloat,16);
+		vector(_sety,tmpvector,tmpfloat);
+		spawnparticle(fx_ElectricStrip,-1,tmpvector3,tmpvector,color);
+
+		vector(_add,tmpvector2,tmpvector);
+		vector(_copy,tmpvector3,tmpvector2);
+		float(_rnd2,tmpfloat,32);
+		float(_sub,tmpfloat,16);
+		vector(_sety,tmpvector,tmpfloat);
+		spawnparticle(fx_ElectricStrip,-1,tmpvector3,tmpvector,color);
+
+		vector(_copy,fxvector,tmpvector1);
+		vector(_add,tmpvector2,tmpvector);
+		vector(_copy,tmpvector3,tmpvector2);
+		vector(_sub,fxvector,tmpvector3);
+		spawnparticle(fx_ElectricStrip,-1,tmpvector3,fxvector,color);
+}
+
+
+

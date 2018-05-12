@@ -1,0 +1,58 @@
+		vector(_set,Gactorpos,-9790,25177,20224);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Fact_9",TRUE,1);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Fact_9");
+
+		vector(_set,Gactorpos,-7777,25484,19844);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(scientist,Gactorpos,Gactorangle,"Fact_20",TRUE,2);
+
+		vector(_set,Gactorpos,-8086,25474,19649);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(GunTurret,Gactorpos,Gactorangle,"Fact_20",FALSE,0);
+
+		vector(_set,Gactorpos,-7781,23994,19296);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(scientist,Gactorpos,Gactorangle,"Fact_21",TRUE,4);
+
+		vector(_set,Gactorpos,-8355,25373,18430);
+		vector(_set,Gactorangle,0,0,-11);
+		InitActor(scientist,Gactorpos,Gactorangle,"Fact_21",TRUE,1);
+
+		vector(_set,Gactorpos,-8511,24589,16664);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(coph,Gactorpos,Gactorangle,"Fact_23",TRUE,4);
+		InitActor(WeaponFlameThrower,Gactorpos,Gactorangle,"Fact_23");
+
+		vector(_set,Gactorpos,-9664,24589,16696);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Fact_23",TRUE,4);
+		InitActor(WeaponBazooka,Gactorpos,Gactorangle,"Fact_23");
+
+		vector(_set,Gactorpos,-9602,25186,18055);
+		vector(_set,Gactorangle,0,1024,0);
+		InitActor(copm,Gactorpos,Gactorangle,"Fact_3",TRUE,2);
+		InitActor(WeaponMachineGun,Gactorpos,Gactorangle,"Fact_3");
+
+		vector(_set,Gactorpos,-10168,24875,19215);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Fact_3",TRUE,3);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Fact_3");
+
+		vector(_set,Gactorpos,-7989,24428,20089);
+		vector(_set,Gactorangle,0,-1012,0);
+		InitActor(scientist,Gactorpos,Gactorangle,"Fact_5",TRUE,1);
+
+		vector(_set,Gactorpos,-11836,25346,20030);
+		vector(_set,Gactorangle,0,2048,0);
+		InitActor(scientist,Gactorpos,Gactorangle,"Fact_7",TRUE,2);
+
+		vector(_set,Gactorpos,-10779,24578,17576);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(scientist,Gactorpos,Gactorangle,"Fact_1",TRUE,2);
+
+		vector(_set,Gactorpos,-7568,24232,17409);
+		vector(_set,Gactorangle,0,1536,0);
+		InitActor(scientist,Gactorpos,Gactorangle,"Fact_17a",TRUE,3);
+
+

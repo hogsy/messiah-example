@@ -1,0 +1,28 @@
+		vector(_set,Gactorpos,-17181,25475,13937);
+		vector(_set,Gactorangle,0,1024,0);
+		InitActor(worker2,Gactorpos,Gactorangle,"Wast2",TRUE,1);
+
+		vector(_set,Gactorpos,-15370,23877,14674);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(radiationworker,Gactorpos,Gactorangle,"Wast12",TRUE,1);
+
+		vector(_set,Gactorpos,-16045,24732,17003);
+		vector(_set,Gactorangle,0,2525,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Wast17",TRUE,1);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Wast17");
+
+		vector(_set,Gactorpos,-15202,24565,16766);
+		vector(_set,Gactorangle,0,1024,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Wast17",TRUE,2);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Wast17");
+
+		vector(_set,Gactorpos,-15327,24621,17738);
+		vector(_set,Gactorangle,0,-1046,0);
+		InitActor(GunCommander,Gactorpos,Gactorangle,"Wast17",TRUE,3);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Wast17");
+
+		vector(_set,Gactorpos,-16671,24806,16392);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(CleanUpBot,Gactorpos,Gactorangle,"Wast15",FALSE,0);
+
+

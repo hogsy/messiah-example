@@ -1,0 +1,130 @@
+
+		vector(_set,Gactorpos,-13461,24471,23362);
+		vector(_set,Gactorangle,0,-1934,0);
+		InitActor(copm,Gactorpos,Gactorangle,"Stor_01",TRUE,1);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Stor_01");
+
+		vector(_set,Gactorpos,-12836,24443,24477);
+		vector(_set,Gactorangle,0,3117,0);
+		InitActor(worker,Gactorpos,Gactorangle,"Stor_01",TRUE,3);
+		InitActor(WeaponTorch,Gactorpos,Gactorangle,"Stor_01");
+
+		vector(_set,Gactorpos,-12663,24439,23386);
+		vector(_set,Gactorangle,0,-1968,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Stor_01",TRUE,0);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Stor_01");
+
+		vector(_set,Gactorpos,-11988,24460,24380);
+		vector(_set,Gactorangle,0,-2048,0);
+		InitActor(workeronbench,Gactorpos,Gactorangle,"Stor_01",FALSE,0);
+		InitActor(WeaponTorch,Gactorpos,Gactorangle,"Stor_01");
+
+		vector(_set,Gactorpos,-13498,25205,26582);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(copm,Gactorpos,Gactorangle,"Stor_02",TRUE,1);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Stor_02");
+
+		vector(_set,Gactorpos,-12375,23534,27117);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(copm,Gactorpos,Gactorangle,"Stor_03",FALSE,0);
+		InitActor(WeaponMaimer,Gactorpos,Gactorangle,"Stor_03");
+
+		vector(_set,Gactorpos,-12753,23337,26363);
+		vector(_set,Gactorangle,0,-1024,0);
+		InitActor(abeast,Gactorpos,Gactorangle,"Stor_03",FALSE,0);
+
+		vector(_set,Gactorpos,-14352,27015,26052);
+		vector(_set,Gactorangle,0,1035,0);
+		InitActor(copl,Gactorpos,Gactorangle,"War_01",TRUE,1);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"War_01");
+
+		vector(_set,Gactorpos,-15668,27032,26603);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(copm,Gactorpos,Gactorangle,"War_01",TRUE,2);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"War_01");
+
+		vector(_set,Gactorpos,-15869,26986,26312);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(worker,Gactorpos,Gactorangle,"War_01",TRUE,1);
+		InitActor(WeaponTorch,Gactorpos,Gactorangle,"War_01");
+
+		vector(_set,Gactorpos,-15152,25807,26821);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(copm,Gactorpos,Gactorangle,"War_02",TRUE,0);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"War_02");
+
+		vector(_set,Gactorpos,-15739,25788,26420);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(worker,Gactorpos,Gactorangle,"War_02",TRUE,0);
+		InitActor(WeaponTorch,Gactorpos,Gactorangle,"War_02");
+
+		vector(_set,Gactorpos,-14475,25788,26384);
+		vector(_set,Gactorangle,0,967,0);
+		InitActor(copl,Gactorpos,Gactorangle,"War_02",TRUE,1);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"War_02");
+
+		vector(_set,Gactorpos,-16267,24588,26192);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(worker,Gactorpos,Gactorangle,"War_03",TRUE,1);
+		InitActor(WeaponTorch,Gactorpos,Gactorangle,"War_03");
+
+		vector(_set,Gactorpos,-14186,24597,26506);
+		vector(_set,Gactorangle,0,1012,0);
+		InitActor(copm,Gactorpos,Gactorangle,"War_03",TRUE,0);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"War_03");
+
+		vector(_set,Gactorpos,-14175,24591,26285);
+		vector(_set,Gactorangle,0,1012,0);
+		InitActor(copm,Gactorpos,Gactorangle,"War_03",TRUE,0);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"War_03");
+
+		vector(_set,Gactorpos,-15511,24600,26623);
+		vector(_set,Gactorangle,0,-955,0);
+		InitActor(worker,Gactorpos,Gactorangle,"War_03",TRUE,2);
+		InitActor(WeaponTorch,Gactorpos,Gactorangle,"War_03");
+
+		vector(_set,Gactorpos,-15443,24007,26893);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(WeaponHarpoon,Gactorpos,Gactorangle,"War_04",FALSE,0);
+
+		vector(_set,Gactorpos,-14696,23411,26048);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(worker,Gactorpos,Gactorangle,"War_04",FALSE,0);
+		InitActor(weapontorch,Gactorpos,Gactorangle,"War_04");
+
+		vector(_set,Gactorpos,-15977,23315,26620);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(radiationworker,Gactorpos,Gactorangle,"War_04",FALSE,0);
+
+		vector(_set,Gactorpos,-15162,24464,24525);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(copl,Gactorpos,Gactorangle,"War_ent",TRUE,0);
+		InitActor(WeaponMachineGun,Gactorpos,Gactorangle,"War_ent");
+
+		vector(_set,Gactorpos,-16357,24610,24010);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(worker,Gactorpos,Gactorangle,"War_ent",TRUE,0);
+
+		vector(_set,Gactorpos,-16305,24615,24637);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(worker,Gactorpos,Gactorangle,"War_ent",TRUE,0);
+		InitActor(WeaponTorch,Gactorpos,Gactorangle,"War_ent");
+
+		vector(_set,Gactorpos,-15758,24617,25594);
+		vector(_set,Gactorangle,0,4073,0);
+		InitActor(copl,Gactorpos,Gactorangle,"War_ent",FALSE,0);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"War_ent");
+
+		vector(_set,Gactorpos,-15057,25546,23618);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(WeaponMachinegun,Gactorpos,Gactorangle,"War_ent",FALSE,0);
+
+		vector(_set,Gactorpos,-14653,22216,26714);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(radiationworker,Gactorpos,Gactorangle,"War_rad",FALSE,0);
+
+		vector(_set,Gactorpos,-15073,27453,27165);
+		vector(_set,Gactorangle,0,2048,0);
+		InitActor(mdroid1,Gactorpos,Gactorangle,"El_x03",FALSE,0);
+
+

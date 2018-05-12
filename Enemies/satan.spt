@@ -1,0 +1,134 @@
+
+
+Actor(Satan)
+{
+		file(SatanHeader);
+		rank(_RankGeneral);
+
+		startstate(statenormal);
+		startaction(SatanIdle);
+
+		ActorFlag(_or,_AFLAGnopossesion);
+
+/*		printi("PathDestDist:     ",VPathDestDistance);
+		printi("PathDestAngle:    ",VPathDestAngle);
+		printi("PickDestAngle:    ",VPickDestAngle);
+		printi("TargetDistance:   ",vtargetdistance);
+		printi("TargetAngle:      ",vtargetangle);
+*/
+
+		if(vtrigger==_DIRdepossesion)
+		{
+			callsub(Sub_InitDepossesion,SatanWound,SatanWound,SatanWound);
+		}
+		elseif(vtrigger==_DIRpossesion)
+		{
+			SpawnAction(SatanWound);
+		}
+
+		Direction(_clr,_DIRaiRemoveFlags);
+
+		call(AIupdateAIvars);
+		if(aivisiontoggle==0)
+		{
+			call(AIcheckfortarget,10);
+		}
+
+		call(AIcheckforplayerone,10000);
+		call(AIsetlockedonactortotarget);
+		call(AIupdatetargetpos);
+
+		if(VAIhastarget!=0 && VActorFlag!=_AFLAGattached)
+		{
+			//printi("Satan has target:     ",VTargetDistance);
+			call(AIPickdest,10);		//follow path
+
+			//printi("satan pickdestangle:  ",vpickdestanglecorr);
+			//printi("satan targetangle:    ",vtargetangle);
+
+			if(VTargetDistance>200 && VActorFlag!=_AFLAGnoai)
+			{
+				//print("Satan aligning to pickdestangle");
+				callsub(Sub_AI1WayAlignToPickDestAngle);
+				if(VTrigger==_DIRleft)
+				{
+					//print("Turning left");
+					turn(0,-30,0);
+				}
+				elseif(VTrigger==_DIRright)
+				{
+					//print("Turning right");
+					turn(0,30,0);
+				}
+
+				if(vpickdestanglecorr<100 && vpickdestanglecorr>-100)
+				{
+					//print("moving forward");
+					Direction(_or,_DIRforward);
+				}
+			}
+			else
+			{
+				//print("Satan aligning to targetangle");
+				callsub(Sub_AI1WayAlignToTarget);
+				if(VTrigger==_DIRleft)
+				{
+					//print("Turning left");
+					turn(0,-30,0);
+				}
+				elseif(VTrigger==_DIRright)
+				{
+					//print("Turning right");
+					turn(0,30,0);
+				}
+
+				if(VTargetAngle<100 && VTargetAngle>-100)
+				{
+					//print("moving forward");
+					Direction(_or,_DIRforward);
+				}
+			}
+		}
+
+		if(VState!=StateDead)
+		{
+			if(VHealth<=0)
+			{
+				if(vaction!=SatanDeath)
+				{
+					spawnaction(SatanDeath);
+					sample(SFXScientistOhShit,-1);
+				}
+				elseif(VFrame==50)
+				{
+					State(_or,StateDead);
+				}
+			}
+			elseif(VTrigger==_DIRactorbulletcol)
+			{
+				spawnaction(SatanWound);
+				sample(SFXScientistScared,-1);
+			}
+			printi("Satan health:  ",VHealth);
+		}
+		else
+		{
+			if(VEndOfAnim!=0)
+			{
+				KillActor();
+			}
+		}
+
+		CallSub(BackGroundTriggerChecks);
+
+		
+		//footsteps
+		if(Vstate!=StateCrawling)
+		{
+			if(vtrigger==_DIRleft||vtrigger==_DIRright||vtrigger==_DIRforward||vtrigger==_DIRbackward||vtrigger==_DIRsideleft||vtrigger==_DIRsideright||vtrigger==_DIRjump)
+			{
+				callsub(Sub_CheckFootSteps,_sFLAGLeftFoot);
+				callsub(Sub_CheckFootSteps,_sFLAGRightFoot);
+			}
+		}
+}

@@ -1,0 +1,46 @@
+		vector(_set,Gactorpos,-10101,33292,6304);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(copl,Gactorpos,Gactorangle,"SkyEnt",TRUE,1);
+		InitActor(WeaponMachineGun,Gactorpos,Gactorangle,"SkyEnt");
+
+		vector(_set,Gactorpos,-9286,32993,8648);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(scientist,Gactorpos,Gactorangle,"Tele",TRUE,2);
+
+		vector(_set,Gactorpos,-10637,33002,9034);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(scientist,Gactorpos,Gactorangle,"Tele",TRUE,1);
+
+		vector(_set,Gactorpos,-10925,33169,8672);
+		vector(_set,Gactorangle,0,1388,0);
+		InitActor(priest,Gactorpos,Gactorangle,"Skyboss",FALSE,0);
+
+		vector(_set,Gactorpos,-10805,33169,10108);
+		vector(_set,Gactorangle,0,1388,0);
+		InitActor(priest,Gactorpos,Gactorangle,"Skyboss",FALSE,0);
+
+		vector(_set,Gactorpos,-11710,33169,11265);
+		vector(_set,Gactorangle,0,329,0);
+		InitActor(priest,Gactorpos,Gactorangle,"Skyboss",FALSE,0);
+
+		vector(_set,Gactorpos,-13195,33169,11354);
+		vector(_set,Gactorangle,0,3913,0);
+		InitActor(priest,Gactorpos,Gactorangle,"Skyboss",FALSE,0);
+
+		vector(_set,Gactorpos,-14308,33169,10435);
+		vector(_set,Gactorangle,0,3492,0);
+		InitActor(priest,Gactorpos,Gactorangle,"Skyboss",FALSE,0);
+
+		vector(_set,Gactorpos,-14472,33169,8971);
+		vector(_set,Gactorangle,0,2924,0);
+		InitActor(priest,Gactorpos,Gactorangle,"Skyboss",FALSE,0);
+
+		vector(_set,Gactorpos,-13511,33169,7814);
+		vector(_set,Gactorangle,0,2298,0);
+		InitActor(priest,Gactorpos,Gactorangle,"Skyboss",FALSE,0);
+
+		vector(_set,Gactorpos,-12604,33336,9550);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(ChotBeast,Gactorpos,Gactorangle,"Skyboss",FALSE,0);
+
+

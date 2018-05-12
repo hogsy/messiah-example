@@ -1,0 +1,87 @@
+		vector(_set,Gactorpos,-12902,24407,18552);
+		vector(_set,Gactorangle,0,-1467,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Walls9",TRUE,2);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Walls9");
+
+		vector(_set,Gactorpos,-12663,24407,18656);
+		vector(_set,Gactorangle,0,-3492,0);
+		InitActor(copm,Gactorpos,Gactorangle,"Walls9",TRUE,1);
+		InitActor(WeaponMachineGun,Gactorpos,Gactorangle,"Walls9");
+
+		vector(_set,Gactorpos,-11615,25025,21434);
+		vector(_set,Gactorangle,0,2104,0);
+		InitActor(coph,Gactorpos,Gactorangle,"Pilhall",TRUE,1);
+		InitActor(WeaponFlameThrower,Gactorpos,Gactorangle,"Pilhall");
+
+		vector(_set,Gactorpos,-12049,24434,21919);
+		vector(_set,Gactorangle,0,1024,0);
+		InitActor(abeast,Gactorpos,Gactorangle,"Walls1",TRUE,2);
+
+		vector(_set,Gactorpos,-12145,24410,15484);
+		vector(_set,Gactorangle,0,455,0);
+		InitActor(worker,Gactorpos,Gactorangle,"Walls12",TRUE,11);
+		InitActor(WeaponTorch,Gactorpos,Gactorangle,"Walls12");
+
+		vector(_set,Gactorpos,-11925,24410,15444);
+		vector(_set,Gactorangle,0,1137,0);
+		InitActor(worker2,Gactorpos,Gactorangle,"Walls12",TRUE,12);
+
+		vector(_set,Gactorpos,-10614,24427,21843);
+		vector(_set,Gactorangle,0,341,0);
+		InitActor(chotdead,Gactorpos,Gactorangle,"Walls2",FALSE,0);
+
+		vector(_set,Gactorpos,-10602,24420,21911);
+		vector(_set,Gactorangle,0,-4061,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Walls2",TRUE,1);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Walls2");
+
+		vector(_set,Gactorpos,-10716,24420,21819);
+		vector(_set,Gactorangle,0,-1206,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Walls2",FALSE,0);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Walls2");
+
+		vector(_set,Gactorpos,-12223,24411,16437);
+		vector(_set,Gactorangle,0,1672,0);
+		InitActor(copr,Gactorpos,Gactorangle,"Walls3",TRUE,37);
+
+		vector(_set,Gactorpos,-12463,24783,14213);
+		vector(_set,Gactorangle,0,-477,0);
+		InitActor(WeaponHarpoon,Gactorpos,Gactorangle,"Loftwork",FALSE,0);
+
+		vector(_set,Gactorpos,-17665,24737,23275);
+		vector(_set,Gactorangle,0,3083,0);
+		InitActor(abeast,Gactorpos,Gactorangle,"Walls4b",TRUE,1);
+
+		vector(_set,Gactorpos,-17893,24737,21177);
+		vector(_set,Gactorangle,0,2059,0);
+		InitActor(abeast,Gactorpos,Gactorangle,"Walls4b",TRUE,3);
+
+		vector(_set,Gactorpos,-17447,24737,21173);
+		vector(_set,Gactorangle,0,2059,0);
+		InitActor(abeast,Gactorpos,Gactorangle,"Walls4b",TRUE,57);
+
+		vector(_set,Gactorpos,-17265,24737,21932);
+		vector(_set,Gactorangle,0,1729,0);
+		InitActor(dweller1,Gactorpos,Gactorangle,"Walls4b",TRUE,4);
+
+		vector(_set,Gactorpos,-17667,24737,22103);
+		vector(_set,Gactorangle,0,-261,0);
+		InitActor(dweller1,Gactorpos,Gactorangle,"Walls4b",TRUE,3);
+
+		vector(_set,Gactorpos,-17568,24737,22768);
+		vector(_set,Gactorangle,0,3037,0);
+		InitActor(dweller1,Gactorpos,Gactorangle,"Walls4b",TRUE,2);
+
+		vector(_set,Gactorpos,-17083,24737,22646);
+		vector(_set,Gactorangle,0,1649,0);
+		InitActor(dweller1,Gactorpos,Gactorangle,"Walls4b",TRUE,1);
+
+		vector(_set,Gactorpos,-17184,24826,22353);
+		vector(_set,Gactorangle,0,3413,0);
+		InitActor(dweller1,Gactorpos,Gactorangle,"Walls4b",TRUE,5);
+
+		vector(_set,Gactorpos,-17634,24758,18204);
+		vector(_set,Gactorangle,0,2059,0);
+		InitActor(abeast,Gactorpos,Gactorangle,"Walls5b",TRUE,5);
+
+

@@ -1,0 +1,43 @@
+		vector(_set,Gactorpos,-15542,23698,19787);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(copm,Gactorpos,Gactorangle,"Convier3",TRUE,1);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Convier3");
+
+		vector(_set,Gactorpos,-15341,23698,19787);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(copm,Gactorpos,Gactorangle,"Convier3",TRUE,2);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Convier3");
+
+		vector(_set,Gactorpos,-16115,22885,19348);
+		vector(_set,Gactorangle,0,1024,0);
+		InitActor(copm,Gactorpos,Gactorangle,"Convier2",TRUE,10);
+		InitActor(WeaponMachineGun,Gactorpos,Gactorangle,"Convier2");
+
+		vector(_set,Gactorpos,-16336,25465,18078);
+		vector(_set,Gactorangle,0,2048,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Convier2",TRUE,11);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Convier2");
+
+		vector(_set,Gactorpos,-16408,24138,21005);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(worker,Gactorpos,Gactorangle,"Convier1",TRUE,10);
+
+		vector(_set,Gactorpos,-14544,24435,20896);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(weaponammo,Gactorpos,Gactorangle,"Convier1",FALSE,0);
+
+		vector(_set,Gactorpos,-14309,24432,20495);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Convier1",FALSE,0);
+
+		vector(_set,Gactorpos,-15493,24646,20803);
+		vector(_set,Gactorangle,0,-1035,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Convier1",TRUE,9);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Convier1");
+
+		vector(_set,Gactorpos,-15493,24647,20589);
+		vector(_set,Gactorangle,0,-1035,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Convier1",TRUE,8);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Convier1");
+
+

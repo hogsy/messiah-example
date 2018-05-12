@@ -1,0 +1,17 @@
+		vector(_set,Gactorpos,-3816,-2156,7649);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(DeadScientist,Gactorpos,Gactorangle,"Cryo04",FALSE,0);
+
+		vector(_set,Gactorpos,-2200,-2196,6728);
+		vector(_set,Gactorangle,0,1024,0);
+		InitActor(DeadScientistInMonitor,Gactorpos,Gactorangle,"Cryo02",FALSE,0);
+
+		vector(_set,Gactorpos,-3803,-2155,8090);
+		vector(_set,Gactorangle,0,500,0);
+		InitActor(DeadScientist,Gactorpos,Gactorangle,"Cryo03",FALSE,0);
+
+		vector(_set,Gactorpos,-3145,-2160,8605);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(DeadScientist,Gactorpos,Gactorangle,"Cryo03",FALSE,0);
+
+

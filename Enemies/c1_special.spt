@@ -1,0 +1,3 @@
+			vector(_set,Gactorpos,-5943,2761,343);
+			vector(_set,Gactorangle,0,0,0);
+			InitActor(BulletBattery,Gactorpos,Gactorangle,"S1R18");

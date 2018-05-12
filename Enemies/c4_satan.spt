@@ -1,0 +1,21 @@
+
+		vector(_set,Gactorpos,-4,809,60);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(Satan,Gactorpos,Gactorangle,"Satan",FALSE,0);
+/*
+		vector(_set,Gactorpos,2485,779,0);
+		vector(_set,Gactorangle,0,1001,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Satan",FALSE,0);
+
+		vector(_set,Gactorpos,-2476,779,0);
+		vector(_set,Gactorangle,0,-1058,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Satan",FALSE,0);
+
+		vector(_set,Gactorpos,-4,779,2481);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Satan",FALSE,0);
+*/
+
+		vector(_set,Gactorpos,-6,779,-1851);
+		vector(_set,Gactorangle,0,1001,0);
+//		InitActor(evilbob,Gactorpos,Gactorangle,"Satan",FALSE,0);

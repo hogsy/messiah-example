@@ -1,0 +1,245 @@
+		vector(_set,Gactorpos,-6562,21487,11284);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(CleanUpBot,Gactorpos,Gactorangle,"Club01a",FALSE,0);
+
+		vector(_set,Gactorpos,-6666,21485,11180);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(Nun,Gactorpos,Gactorangle,"Club01a",FALSE,0);
+
+		vector(_set,Gactorpos,-7258,21463,12350);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(dweller2,Gactorpos,Gactorangle,"Club01v",TRUE,1);
+
+		vector(_set,Gactorpos,-6752,21450,12323);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(CleanUpBot,Gactorpos,Gactorangle,"Club01v",FALSE,0);
+
+		vector(_set,Gactorpos,-6793,21450,14124);
+		vector(_set,Gactorangle,0,5085,0);
+		InitActor(FemDweller1,Gactorpos,Gactorangle,"Club01w",TRUE,1);
+
+		vector(_set,Gactorpos,-8007,21488,11788);
+		vector(_set,Gactorangle,0,-4084,0);
+		InitActor(Dweller3,Gactorpos,Gactorangle,"Club01x",TRUE,3);
+
+		vector(_set,Gactorpos,-8007,21492,11580);
+		vector(_set,Gactorangle,0,-2048,0);
+		InitActor(barman,Gactorpos,Gactorangle,"Club01x",TRUE,1);
+
+		vector(_set,Gactorpos,-7981,21492,14566);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(barman,Gactorpos,Gactorangle,"Club01y",TRUE,1);
+
+		vector(_set,Gactorpos,-7730,21487,14376);
+		vector(_set,Gactorangle,0,-4096,0);
+		InitActor(dweller1,Gactorpos,Gactorangle,"Club01y",TRUE,2);
+
+		vector(_set,Gactorpos,-8552,21450,13984);
+		vector(_set,Gactorangle,0,-1024,0);
+		InitActor(FemDweller2,Gactorpos,Gactorangle,"Club01y",TRUE,4);
+
+		vector(_set,Gactorpos,-7373,21538,13256);
+		vector(_set,Gactorangle,0,-1024,0);
+		InitActor(dweller3sit,Gactorpos,Gactorangle,"Club01z",TRUE,1);
+
+		vector(_set,Gactorpos,-7212,21577,13065);
+		vector(_set,Gactorangle,0,-1024,0);
+		InitActor(dancer1,Gactorpos,Gactorangle,"Club01z",TRUE,2);
+
+		vector(_set,Gactorpos,-7890,22787,13487);
+		vector(_set,Gactorangle,0,-1012,0);
+		InitActor(prost1,Gactorpos,Gactorangle,"Danchal1",TRUE,11);
+
+		vector(_set,Gactorpos,-7483,22787,13482);
+		vector(_set,Gactorangle,0,-2059,0);
+		InitActor(domina,Gactorpos,Gactorangle,"Danchal1",TRUE,13);
+
+		vector(_set,Gactorpos,-7155,22791,13466);
+		vector(_set,Gactorangle,0,11,0);
+		InitActor(hung,Gactorpos,Gactorangle,"Danchal1",TRUE,15);
+
+		vector(_set,Gactorpos,-6769,22787,13480);
+		vector(_set,Gactorangle,0,-2560,0);
+		InitActor(hung,Gactorpos,Gactorangle,"Danchal1",TRUE,17);
+
+		vector(_set,Gactorpos,-6465,22788,13586);
+		vector(_set,Gactorangle,0,1001,0);
+		InitActor(Dweller3,Gactorpos,Gactorangle,"Danchal1",TRUE,18);
+
+		vector(_set,Gactorpos,-7998,22787,12707);
+		vector(_set,Gactorangle,0,-1069,0);
+		InitActor(dweller2,Gactorpos,Gactorangle,"Danchal1",TRUE,21);
+
+		vector(_set,Gactorpos,-7603,22787,12707);
+		vector(_set,Gactorangle,0,568,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Danchal1",TRUE,23);
+
+		vector(_set,Gactorpos,-7251,22787,12682);
+		vector(_set,Gactorangle,0,364,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Danchal1",TRUE,25);
+
+		vector(_set,Gactorpos,-6918,22787,12678);
+		vector(_set,Gactorangle,0,-1194,0);
+		InitActor(dweller1,Gactorpos,Gactorangle,"Danchal1",TRUE,26);
+
+		vector(_set,Gactorpos,-6657,22788,12680);
+		vector(_set,Gactorangle,0,1592,0);
+		InitActor(dweller2,Gactorpos,Gactorangle,"Danchal1",TRUE,27);
+
+		vector(_set,Gactorpos,-6283,23140,13181);
+		vector(_set,Gactorangle,0,1024,0);
+		InitActor(DJKyd,Gactorpos,Gactorangle,"Danchal1",TRUE,1);
+
+		vector(_set,Gactorpos,-7215,22096,14546);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(barman,Gactorpos,Gactorangle,"Vip01a",TRUE,1);
+
+		vector(_set,Gactorpos,-8633,22054,14061);
+		vector(_set,Gactorangle,0,-1035,0);
+		InitActor(dweller2,Gactorpos,Gactorangle,"Vip01a",TRUE,2);
+
+		vector(_set,Gactorpos,-7508,22062,14066);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(dweller1,Gactorpos,Gactorangle,"Vip01a",TRUE,3);
+
+		vector(_set,Gactorpos,-8231,22087,14346);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(FemDweller2,Gactorpos,Gactorangle,"Vip01a",TRUE,21);
+
+		vector(_set,Gactorpos,-7634,22048,14059);
+		vector(_set,Gactorangle,0,-1024,0);
+		InitActor(FemDweller1,Gactorpos,Gactorangle,"Vip01a",TRUE,5);
+
+		vector(_set,Gactorpos,-8717,22050,13846);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(CleanUpBot,Gactorpos,Gactorangle,"Vip01a",FALSE,0);
+
+		vector(_set,Gactorpos,-7905,22137,12738);
+		vector(_set,Gactorangle,0,1012,0);
+		InitActor(dweller1sit,Gactorpos,Gactorangle,"Vip01b",TRUE,2);
+
+		vector(_set,Gactorpos,-8053,22137,12581);
+		vector(_set,Gactorangle,0,-2048,0);
+		InitActor(dweller2sit,Gactorpos,Gactorangle,"Vip01b",TRUE,3);
+
+		vector(_set,Gactorpos,-7919,22137,13236);
+		vector(_set,Gactorangle,0,-3060,0);
+		InitActor(dweller2sit,Gactorpos,Gactorangle,"Vip01b",TRUE,4);
+
+		vector(_set,Gactorpos,-8054,22177,12705);
+		vector(_set,Gactorangle,0,-45,0);
+		InitActor(dancer2,Gactorpos,Gactorangle,"Vip01b",TRUE,1);
+
+		vector(_set,Gactorpos,-8480,22050,13394);
+		vector(_set,Gactorangle,0,-1024,0);
+		InitActor(FemDweller2,Gactorpos,Gactorangle,"Vip01b",TRUE,5);
+
+		vector(_set,Gactorpos,-7658,22137,13187);
+		vector(_set,Gactorangle,0,-1035,0);
+		InitActor(dweller2sit,Gactorpos,Gactorangle,"Vip01c",TRUE,1);
+
+		vector(_set,Gactorpos,-7482,22177,12706);
+		vector(_set,Gactorangle,0,-1024,0);
+		InitActor(dweller1sit,Gactorpos,Gactorangle,"Vip01c",TRUE,3);
+
+		vector(_set,Gactorpos,-7055,22050,13537);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(CleanUpBot,Gactorpos,Gactorangle,"Vip01c",FALSE,0);
+
+		vector(_set,Gactorpos,-8010,22085,12075);
+		vector(_set,Gactorangle,0,-967,0);
+		InitActor(dweller1,Gactorpos,Gactorangle,"Vip01d",TRUE,11);
+
+		vector(_set,Gactorpos,-7843,22085,12201);
+		vector(_set,Gactorangle,0,-341,0);
+		InitActor(Nun,Gactorpos,Gactorangle,"Vip01d",TRUE,12);
+
+		vector(_set,Gactorpos,-7683,22085,12103);
+		vector(_set,Gactorangle,0,352,0);
+		InitActor(dweller1,Gactorpos,Gactorangle,"Vip01d",TRUE,13);
+
+		vector(_set,Gactorpos,-6073,22087,13240);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(Dweller3,Gactorpos,Gactorangle,"Vip1_b01",TRUE,1);
+
+		vector(_set,Gactorpos,-6419,22087,13225);
+		vector(_set,Gactorangle,0,-4391,0);
+		InitActor(dweller1,Gactorpos,Gactorangle,"Vip1_b01",TRUE,2);
+
+		vector(_set,Gactorpos,-6086,22087,12765);
+		vector(_set,Gactorangle,0,-1069,0);
+		InitActor(dancer1,Gactorpos,Gactorangle,"Vip1_b02",TRUE,2);
+
+		vector(_set,Gactorpos,-6813,22087,12698);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(CleanUpBot,Gactorpos,Gactorangle,"Vip1_b02",FALSE,0);
+
+		vector(_set,Gactorpos,-7525,24000,13292);
+		vector(_set,Gactorangle,0,1012,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Vip02d",TRUE,11);
+
+		vector(_set,Gactorpos,-7708,24000,13301);
+		vector(_set,Gactorangle,0,-1012,0);
+		InitActor(GunCommander,Gactorpos,Gactorangle,"Vip02d",TRUE,12);
+
+		vector(_set,Gactorpos,-6293,24002,13244);
+		vector(_set,Gactorangle,0,1012,0);
+		InitActor(dweller2,Gactorpos,Gactorangle,"Vip02a",TRUE,12);
+
+		vector(_set,Gactorpos,-6300,24000,12919);
+		vector(_set,Gactorangle,0,-2059,0);
+		InitActor(dweller2,Gactorpos,Gactorangle,"Vip02a",TRUE,11);
+
+		vector(_set,Gactorpos,-6409,24000,13208);
+		vector(_set,Gactorangle,0,-1024,0);
+		InitActor(dancer1,Gactorpos,Gactorangle,"Vip02a",TRUE,13);
+
+		vector(_set,Gactorpos,-6306,24000,12666);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(CleanUpBot,Gactorpos,Gactorangle,"Vip02a",FALSE,0);
+
+		vector(_set,Gactorpos,-6775,24000,14089);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(domina,Gactorpos,Gactorangle,"Vip02b",TRUE,11);
+
+		vector(_set,Gactorpos,-7226,24000,13891);
+		vector(_set,Gactorangle,0,-2048,0);
+		InitActor(dweller1,Gactorpos,Gactorangle,"Vip02b",TRUE,12);
+
+		vector(_set,Gactorpos,-7948,24000,13842);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(CleanUpBot,Gactorpos,Gactorangle,"Vip02b",FALSE,0);
+
+		vector(_set,Gactorpos,-7761,24299,13505);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(CleanUpBot,Gactorpos,Gactorangle,"Vip02b",FALSE,0);
+
+		vector(_set,Gactorpos,-6980,24037,14570);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(barman,Gactorpos,Gactorangle,"Vip02b",TRUE,77);
+
+		vector(_set,Gactorpos,-7369,24007,12266);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(domina,Gactorpos,Gactorangle,"Vip02c",TRUE,11);
+
+		vector(_set,Gactorpos,-7030,24037,11841);
+		vector(_set,Gactorangle,0,-2048,0);
+		InitActor(Dweller3,Gactorpos,Gactorangle,"Vip02c",TRUE,12);
+
+		vector(_set,Gactorpos,-6164,24000,12310);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(dancer2,Gactorpos,Gactorangle,"Vip02c",TRUE,13);
+
+		vector(_set,Gactorpos,-6128,24000,12171);
+		vector(_set,Gactorangle,0,-2082,0);
+		InitActor(hung,Gactorpos,Gactorangle,"Vip02c",TRUE,14);
+
+		vector(_set,Gactorpos,-7945,24000,12329);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(CleanUpBot,Gactorpos,Gactorangle,"Vip02c",FALSE,0);
+
+		vector(_set,Gactorpos,-6961,24044,11606);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(barman,Gactorpos,Gactorangle,"Vip02c",TRUE,77);
+
+

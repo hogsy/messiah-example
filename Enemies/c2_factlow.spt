@@ -1,0 +1,20 @@
+		vector(_set,Gactorpos,-11386,23319,19250);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(scientist,Gactorpos,Gactorangle,"Fact_19",TRUE,3);
+
+		vector(_set,Gactorpos,-9484,23011,16817);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Fact_6",TRUE,1);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Fact_6");
+
+		vector(_set,Gactorpos,-11991,23624,18608);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(copm,Gactorpos,Gactorangle,"Fact_10",TRUE,2);
+		InitActor(WeaponMachineGun,Gactorpos,Gactorangle,"Fact_10");
+
+		vector(_set,Gactorpos,-11980,23617,17983);
+		vector(_set,Gactorangle,0,0,0);
+		InitActor(copl,Gactorpos,Gactorangle,"Fact_10",TRUE,2);
+		InitActor(WeaponPumpGun,Gactorpos,Gactorangle,"Fact_10");
+
+

@@ -1,0 +1,172 @@
+
+Action(movefall)
+{
+		trigger(_allDIR);
+		move(0,-10,10);
+}
+Action(nomove)
+{
+		trigger(_allDIR);
+		move(0,0,0);
+}
+Action(nomovenocollision)
+{
+		trigger(_allDIR);
+		move(0,0,0);
+		collision(off);
+		gravity(off);
+}
+
+Action(nomovenogravity)
+{
+		trigger(_allDIR);
+		move(0,0,0);
+		gravity(false);
+}
+
+Action(nomovenogravityWithSound)
+{
+		soundlevel(100);
+		move(0,0,0);
+		gravity(false);
+		Connections(nomovenogravity);
+}
+
+Action(nomoveallcol)
+{
+		trigger(_DIRallcol);
+		move(0,0,0);
+}
+Action(move2)
+{
+		trigger(_allDIR);
+		move(0,2,0);
+}
+Action(move5)
+{
+		trigger(_allDIR);
+		move(0,5,0);
+}
+Action(move10)
+{
+		trigger(_allDIR);
+		move(0,10,0);
+}
+Action(move15)
+{
+		trigger(_allDIR);
+		move(0,15,0);
+}
+Action(move20)
+{
+		trigger(_allDIR);
+		move(0,20,0);
+}
+Action(move25)
+{
+		trigger(_allDIR);
+		move(0,25,0);
+}
+Action(move50)
+{
+		trigger(_allDIR);
+		move(0,50,0);
+}
+Action(move75)
+{
+		trigger(_allDIR);
+		move(0,75,0);
+}
+Action(move50z)
+{
+		trigger(_allDIR);
+		move(0,0,-50);
+}
+Action(move100z)
+{
+		trigger(_allDIR);
+		move(0,0,-100);
+}
+Action(move100zpriestbullet)
+{
+		trigger(_allDIR);
+		move(0,-20,-100);
+}
+Action(move200z)
+{
+		trigger(_allDIR);
+		move(0,0,-200);
+}
+Action(move100)
+{
+		trigger(_allDIR);
+		move(0,100,0);
+}
+Action(move150)
+{
+		trigger(_allDIR);
+		move(0,150,0);
+}
+Action(move200)
+{
+		trigger(_allDIR);
+		move(0,200,0);
+}
+Action(move300)
+{
+		trigger(_allDIR);
+		move(0,300,0);
+}
+Action(move400)
+{
+		trigger(_allDIR);
+		move(0,400,0);
+}
+Action(move500)
+{
+		trigger(_allDIR);
+		move(0,500,0);
+}
+
+
+Action(MovePumpGunShell)
+{
+		trigger(_DIRallcol);
+		move(0,0,-10);
+}
+
+action(botidle)
+{
+		//file("pc\actors\droid1\ske\ready.xxx",100,off);
+		file("pc\actors\weapons\bot\skel.ske",100,on);
+		break(off);
+		trigger(_allDIR);
+		connections(botidle);
+}
+Action(moveDistgrenade)
+{
+		trigger(_allDIR);
+		move(0,10,-80);
+}
+
+Action(MoveThrownGrenade)
+{
+		trigger(_allDIR);
+		move(0,10,-30);
+}
+Action(MoveThrownGrenadeWithSound)
+{
+		soundlevel(100);
+		move(0,10,-30);
+		Connections(MoveThrownGrenade);
+}
+Action(move200zandUp)
+{
+		trigger(_allDIR);
+		move(0,16,-200);
+}
+Action(MoveSubGirlGrenade)
+{
+		trigger(_allDIR);
+		move(0,40,-50);
+}
