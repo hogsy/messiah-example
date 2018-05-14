@@ -208,7 +208,7 @@
 #define	_CamDistance			400		/*default*/
 #define	_CamHeight				105		/*default*/
 
-
+/* variables provided by the engine */
 #define	VEndOfAnim				1
 #define	VAICon					2
 #define	VAction					3
@@ -375,108 +375,115 @@
 #define	VAIQnumberframesagainstwall	243
 #define	VAIQtargetislockedonactor	244
 
-#define	FSpawnActor				1
-#define	FInitActor				2
-#define	FKillActor				3
-#define	FCall					4
-#define	FSample					5
+/* functions provided by the engine.
+ * when using these, the 'F' prefix is
+ * absent for some reason.
+ *
+ * used via '<function>(...)'
+ */
+#define	FSpawnActor				1	// <actor>,<float:x>,<float:y>,<float:z>,<float>
+#define	FInitActor				2	// <actor>,<vector:position>,<vector:angles>,<string>,<float>,<float>
+#define	FKillActor				3	// 
+#define	FCall					4	// <function>,...
+#define	FSample					5	// <sample>,<vector:position> / -1 position denotes it's played everywhere?
 #define	FMove					6
-#define	FSpawnAction			7
+#define	FSpawnAction			7	// <action>
 #define	FState					8
-#define	FDirection				9
+#define	FDirection				9	// <operator>,<float:direction_flag>
 #define	FType					10
-#define	FAIPickDest				11
+#define	FAIPickDest				11	// <float>,<float> / unused
 #define	FTurn					12
 #define	FCalcLocalTurnMat		13
 #define	FScaleBoneMatrix		14
-#define	FCamera					15
+#define	FCamera					15	// <float:distance>,<float:angle>
 #define	FTarget					16
 #define	FFloat					17
 #define	FVector					18
-#define	FCameraRot				19
-#define	FRotateBone				20
-#define	FResetBone				21
-#define	FCenterBone				22
+#define	FCameraRot				19	// unused
+#define	FRotateBone				20	// <float:x>,<float:y>,<float:z>,<float:w>
+#define	FResetBone				21	// unused
+#define	FCenterBone				22	// unused
 #define	FPrint					23
-#define	FPrintI					24
+#define	FPrintI					24	// <string>,<float>
 #define	FPrintLog				25
-#define	FPrintILog				26
+#define	FPrintILog				26	// <string>,<float>
 #define	FCollision				27
-#define	FSetFrame				28
+#define	FSetFrame				28	// unused
 #define	FSpawnParticle			29
-#define	FSpawnLight				30
+#define	FSpawnLight				30	// <light>,<vector:?>,<vector:colour>
 #define	FSpawnGooFX				31
-#define	FCallSub				32
-#define	FBreak					33
+#define	FCallSub				32	// <subroutine>,...
+#define	FBreak					33	// unused
 #define	FCurEnvTrigger			34
 #define	FSetKeyFrame			35
-#define	FMessage				36
+#define	FMessage				36	// <string>,<float:display_time>,<float:font_size>
 #define	FAIGroupPickDest		37
 #define	FCameraGroundClearance	38
-#define	FCheckActorCollision	39
+#define	FCheckActorCollision	39	// <float:?>,<vector:?>,<float:?>,<float:?>,<float:flag>,<float:damage>
 #define	FClrStateCounter		40
 #define FSetActorToTrigger		41
-#define	FFXFlag					42
+#define	FFXFlag					42	// unused
 #define	FCurEnvTriggerSet		43
-#define	FSampleStop				44
+#define	FSampleStop				44	// <sample>,<unknown>
 #define	FPCall					45
-#define	FKFSample				46
+#define	FKFSample				46	// <start_sound>,<loop_sound>,<static>,<end_sound>
 #define	FColState				47
 #define	FTriggerMessage			48
 #define	FDMessage				49
-#define FActorFlag				50
-#define	FChangeMaterialFlags	51
+#define FActorFlag				50	// <operator>,<actor_flag>
+#define	FChangeMaterialFlags	51	// <operator>,<unknown>,<material>,<value>
 #define	FGetNumbActorsInSet		52
 #define FMoveFeetColOffset		53
 #define	FSlope					54
 #define	FRotate					55			//rotat root bone about local axis
-#define FFirstPerson			56
+#define FFirstPerson			56	// <float:on>,<float:unknown>
 #define	FSampleVolume			57
 #define FColObj					58
 #define	FSpawnActorBone			59
-#define	FCutScene				60
+#define	FCutScene				60	// <string>
 #define FKillLight				61
 #define FMissionObjective		62
 #define	FSpawnActorKFObj		63
 #define	FDebugMessage			64
 #define FAddTutorialLine		65
-#define FClearTutorialLines		66
-#define FDisplayTutorialScreen	67
+#define FClearTutorialLines		66	//
+#define FDisplayTutorialScreen	67	// <string>,<float:x>,<float:y>
 #define FHideTutorialScreen		68
-#define	FGravity				69
+#define	FGravity				69	// <float:on>
 #define	FPrintH					70
 #define	FPrintIH				71
 #define	FClearDMessage			72
 #define	FSpecialFlag			73
 #define	FSpawn3DFlare			74			//the only special case fx
 #define	FCopyObjectToObject		75			//copy vertices from object to object (source,destination)
-#define FMessageXY				76
+#define FMessageXY				76	// <string>,<float:x>,<float:y>
 #define	FSamplePlaying			77
-#define	FSphereCollision		78
+#define	FSphereCollision		78	// <float:x0>,<float:y0>,<float:z0>,<float:x1>,<float:y1>,<float:z1>
 
-#define	CheckForPickup				0
+/* used via 'call(<function>,...)' */
+#define	CheckForPickup				0	// <float>,<float:class_flag>
 #define	CheckAttached				1
 #define	CheckForPossesion			2
-#define	CheckBulletCollision		3
+#define	CheckBulletCollision		3	// <float>,<damage>,<float:on>
 #define	CheckBoneCollision			4
 #define	CheckActorCollision			5
 #define	CheckForGrab				6
 #define	AttachLockedActor			7
-#define	AttachToActor				8
-#define	CheckForVisual				9
+#define	AttachToActor				8	// <actor>,<float>
+#define	CheckForVisual				9	// <float:class_mask>,<float:view_distance>
 #define	WallBulb					10
 #define	DrawLaserBeam				11
-#define	CDPlay						12
-#define	CDStop						13
-#define	CDPause						14
-#define	CDResume					15
+#define	CDPlay						12	// <float>,<float>
+#define	CDStop						13	//
+#define	CDPause						14	// unused
+#define	CDResume					15	// unused
 #define	BonePointTrack				16
 #define	KeyObjTrigger				17		//control triggering of keyobjs (endframe,direction,OPTIONAL: triggervalue) direction==0 && triggervalue==0 -> stop object from mving
 #define	KeyObjActiveSegment			18
 #define	KeySpeed					19
-#define	EXPSet1						20
+#define	EXPSet1						20	// <float>,<float>,<float>
 #define	EXPSet2						21
-#define	LightBulb					22
+#define	LightBulb					22	// unused
 #define	ChangeAlpha					23
 #define	ReDrawActor					24
 #define	CheckConnections			25
@@ -484,13 +491,13 @@
 #define	AICon						27
 #define SubtractHealth				28
 #define	IsPickupClose				29
-#define	ModelAmbient				30
-#define	ChangeInventory				31
-#define	ForceRunning				32
+#define	ModelAmbient				30	// <float:r>,<float:g>,<float:b>
+#define	ChangeInventory				31	// <float>,<float>
+#define	ForceRunning				32	//
 #define	SetParticleSetID			33
 #define ThrowCharacter				34
 #define CheckTriggers				35
-#define ActivateButton				36
+#define ActivateButton				36	// <string>,<float>,<float:on>
 #define ExecuteActivateCode			37
 #define	pScale						38		//particle call types
 #define	pFlicControl				39
@@ -505,23 +512,23 @@
 #define	ToggleKey					48
 #define	pSinusx						49
 #define	pSinusy						50
-#define	CheckForDynamicCollision	51
-#define	PickNewNode					52
+#define	CheckForDynamicCollision	51	// <float>
+#define	PickNewNode					52	//
 #define	wCheckViewCollision			53		//special weapon type cops laser
-#define	ClrPath						54
+#define	ClrPath						54	//
 #define	wCheckWeaponTarget			55		//weapon targetting
-#define	pLifeSpan					56
-#define	pCollision					57
-#define	pRebound					58
+#define	pLifeSpan					56	// unused
+#define	pCollision					57	// <float:on>
+#define	pRebound					58	// <float:on>
 #define	pColDeath					59
-#define	pRotateWithDir				60
+#define	pRotateWithDir				60	// unused
 #define	pTridi						61
 #define	pKillWithActor				62
-#define	pSpawnFromStart				63
+#define	pSpawnFromStart				63	// <float:on>
 #define	pFunc						64
 #define	MatrixCallback				65
 #define	pFlipUV						66
-#define	CheckForJumpPossesion		67
+#define	CheckForJumpPossesion		67	// <float>,<float>
 #define	CheckFootCollision			68
 #define	pSinusz						69
 #define PlaySequence				70
@@ -540,34 +547,34 @@
 #define DeadClassRank				83
 #define	ChangeTrigger				84
 #define	wUpdateBulletDamage			85
-#define	RandomizeAimMatrix			86
+#define	RandomizeAimMatrix			86	// <float>,<float>,<float>
 #define	SaveAimMatrix				87
-#define	RestoreAimMatrix			88
+#define	RestoreAimMatrix			88	//
 #define	FreeLook					89
 #define DisplayObjectives			90
 #define	ClrAnalogValues				91
 #define BlastObjCollisionCheck		92
 #define GetNumbActorsInCurrentSet	93
 #define ChangeCutScene				94
-#define	TransferPlayerToAttachActor	95
-#define	XRayModeController			96
-#define	SetBlendingMode				97
+#define	TransferPlayerToAttachActor	95	//
+#define	XRayModeController			96	//
+#define	SetBlendingMode				97	// <float:on>,<operator>,<float>,<float>
 #define	ClearBlendingModeChanges	98
 #define	SetSlowFastMotion			99
 #define	ClrSlowFastMotion			100
 #define	CalcTransMat				101
 #define	SearchForCloseActor			102
-#define	SetLockedOnActorToParent	103
+#define	SetLockedOnActorToParent	103	//
 #define	ClrParentPtr				104
-#define	CopyParentFlags				105
-#define DontBlowBattery				106
+#define	CopyParentFlags				105	//
+#define DontBlowBattery				106	//
 #define	CDVol						107
 #define	WAVEVol						108
 #define	PauseToggle					109
 #define KeyObjControl				110
-#define	ScreenShake					111
-#define	ScreenShakeStop				112
-#define SniperKFObj					113
+#define	ScreenShake					111	// <float>,<float>,<float>,<float>
+#define	ScreenShakeStop				112	// unused
+#define SniperKFObj					113	// <float:on>,<vector>
 #define SetTriggerObjFlag			114
 #define SetFlagsOnActiveActors		115		//change Direction and ActorFlag on all active actors  (radius,height,DUMMY,direction,actorflag)
 #define ClrFlagsOnActiveActors		116		//clr Direction and ActorFlag on all active actors  (radius,height,DUMMY,direction,actorflag)
@@ -580,41 +587,41 @@
 #define	ChangeRelativeSpeed			123
 #define	FadeToBlack					124
 #define AutoTesselation				125
-#define CheckColSphereOffset		126
+#define CheckColSphereOffset		126	//
 #define FaceTriggerDirection		127
 #define ActivateTrigger				128
 #define ForceGlobalRealloc			129
-#define CutSceneEnd					130
+#define CutSceneEnd					130	//
 #define	DetachReattachToPath		131
-#define KillHarpoonHandler			132
+#define KillHarpoonHandler			132	//
 #define TriggerBox					133
 #define	HUDTimerSet					134
-#define RunScriptCode				135
+#define RunScriptCode				135	// <operator>,<float>
 #define	ScriptCodeInitiated			136
-#define LoadLevel					137
-#define NoZoomExit					138
-#define	DeleteEntitiesAndActorsInSet 139
-#define	CDSwap						140
-#define	CDPlaySegment				141
-#define CDForcePlay					142
-#define DisplayHUD					143
-#define DisplaySatanHUDToggle		144
-#define MouseLookToggle				145
-#define SetActorToPrevPos			146
-#define RoomForDeposses				147
-#define CleanUpWeapons				148
-#define InterMessage				149
-#define SetCamBulb					150
-#define	ForceLoadSet				151
-#define DisplayFXPagesToggle		152
+#define LoadLevel					137	// <string>,<float>,<float>
+#define NoZoomExit					138	// <float:on>
+#define	DeleteEntitiesAndActorsInSet 139	// <string>
+#define	CDSwap						140	// <float:track>,<float:loop_state>,<float:volume>,<float:fade_time>
+#define	CDPlaySegment				141	// <float>,<float>,<float>,<float>,<float>
+#define CDForcePlay					142	// <float:on>
+#define DisplayHUD					143	// <float:on>
+#define DisplaySatanHUDToggle		144	// <float:on>
+#define MouseLookToggle				145	// <float:on>
+#define SetActorToPrevPos			146	//
+#define RoomForDeposses				147	// <float:size>
+#define CleanUpWeapons				148	// <float>
+#define InterMessage				149	//
+#define SetCamBulb					150	// <float:on>
+#define	ForceLoadSet				151	// <string>
+#define DisplayFXPagesToggle		152	// <float:on>
 #define	ClearDB						153		//Clears out the stats information for Samples, Actions, Actors and Particles
 #define	LoadPreloadDB				154		//Load the preload DB and initialize Samples, Actions, Actors and Particles
 #define	SavePreloadDB				155		//Save the preload DB and reset stat counters for Samples, Actions, Actors and Particles
-#define	RestoreLastHealth			156
-#define AIVisionStatus				157
-#define	ClrAFlagAttached			158
-#define ProcessScrollUV				159
-#define ProcessKeyFrames			160
+#define	RestoreLastHealth			156	//
+#define AIVisionStatus				157	// <float:on>
+#define	ClrAFlagAttached			158	//
+#define ProcessScrollUV				159	// <float:on>
+#define ProcessKeyFrames			160	// <float:on>
 
 #define	AIasktojoin					200		//AI specific calls
 #define	AIcheckfortarget			201
@@ -628,10 +635,10 @@
 #define	AIgrouppickdest				209
 #define	AIpickdest					210
 #define	AIcorrectforobstacles		211
-#define	AIcheckforonpath			212
+#define	AIcheckforonpath			212	// <float>
 #define	AIcheckactorstates			213
 #define	AIcheckactorstatesneg		214
-#define	AIchecklogtrajectory		215
+#define	AIchecklogtrajectory		215	// <float>
 #define	AIpicknewhidenode			216
 #define	AIclrhidenode				217
 #define	AIupdatetargetpos			218
@@ -664,7 +671,7 @@
 #define	AIsetnumberframesagainstwall	245
 #define	AIclrlockedactorenemyflag	246
 #define	AInrfriendsinset			247
-#define	AIsafetyradius				248
+#define	AIsafetyradius				248	// <float>
 
 #define	StateNormal					0x1
 #define	StateFalling				0x2
@@ -832,40 +839,41 @@
 #define _all				1
 #define _silent				2
 
+/* methods that can be used to alter variables */
 #define	_Gfloat				1
 #define	_Gvector			2
 #define	_Gmat				3
 #define	_float				4
 #define	_vector				5
 #define	_mat				6
-#define	_declare			7
-#define	_set				8
-#define	_seti				9
-#define	_add				10
-#define	_sub				11
-#define	_mul				12
-#define	_div				13
-#define	_addtime			14
-#define	_settoactorpos		15
-#define	_settotargetpos		16
-#define	_setactorpos		17
-#define	_settargetpos		18
+#define	_declare			7	// float, vector
+#define	_set				8	// float, vector
+#define	_seti				9	// float
+#define	_add				10	// float, vector
+#define	_sub				11	// float, vector
+#define	_mul				12	// float, vector
+#define	_div				13	// float
+#define	_addtime			14	// float
+#define	_settoactorpos		15	// vector
+#define	_settotargetpos		16	// vector
+#define	_setactorpos		17	// vector
+#define	_settargetpos		18	// vector
 #define	_distance			19
 #define	_distance2			20
-#define	_normalize			21
+#define	_normalize			21	// vector
 #define	_dotproduct			22
 #define	_xproduct			23
 #define	_direction			24
-#define	_copyx				25
-#define	_copyy				26
-#define	_copyz				27
-#define	_setx				28
-#define	_sety				29
-#define	_setz				30
-#define	_rnd				31
-#define	_copy				32
-#define	_vectorfromangle	33
-#define	_vectorfromdirflags	34
+#define	_copyx				25	// vector
+#define	_copyy				26	// vector
+#define	_copyz				27	// vector
+#define	_setx				28	// vector
+#define	_sety				29	// vector
+#define	_setz				30	// vector
+#define	_rnd				31	// float
+#define	_copy				32	// float, vector
+#define	_vectorfromangle	33	// vector
+#define	_vectorfromdirflags	34	// vector
 #define	_and				35
 #define	_or					36
 #define	_xor				37
@@ -876,38 +884,38 @@
 #define	_setparent			42
 #define	_clrparent			43
 #define	_copyparent			44
-#define	_rnd2				45
-#define	_swapyz				46
-#define	_settobonepos		47
-#define _inv				48
-#define	_target				49
-#define	_settocolobjpos		50
-#define	_subx				51
-#define	_suby				52
-#define	_subz				53
-#define	_addx				54
-#define	_addy				55
-#define	_addz				56
-#define _shiftleft			57
-#define _shiftright			58
-#define	_settolockedpos		59
-#define	_multiplywithtransmat	60
-#define	_settopathdest		61
-#define	_setpathdest		62
+#define	_rnd2				45	// float
+#define	_swapyz				46	// vector
+#define	_settobonepos		47	// vector
+#define _inv				48	// float
+#define	_target				49	// ?
+#define	_settocolobjpos		50	// vector
+#define	_subx				51	// vector
+#define	_suby				52	// vector
+#define	_subz				53	// vector
+#define	_addx				54	// vector
+#define	_addy				55	// vector
+#define	_addz				56	// vector
+#define _shiftleft			57	// float
+#define _shiftright			58	// float
+#define	_settolockedpos		59	// vector
+#define	_multiplywithtransmat	60	// vector
+#define	_settopathdest		61	// vector
+#define	_setpathdest		62	// vector
 #define	_sin				63
 #define	_cos				64
-#define	_settokfpos			65
-#define	_settocolpos		66
+#define	_settokfpos			65	// vector
+#define	_settocolpos		66	// vector
 #define _round				67
 #define _multiplywithobjtransmat 68
-#define _settotriggerpos	69
+#define _settotriggerpos	69	// vector
 #define _abs				70
 #define _scale				71
-#define _settocamtarget		72
-#define	_settoboneposrelative	73
-#define _setplanetrignvec	74
+#define _settocamtarget		72	// vector
+#define	_settoboneposrelative	73	// vector
+#define _setplanetrignvec	74	// vector
 #define	_mod				75
-#define	_setactorangle		76
+#define	_setactorangle		76	// vector
 
 #define	_SXIleft			0x1		//analog partner1		+-=1
 #define	_SXIright			0x2		//analog partner1
